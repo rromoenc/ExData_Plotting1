@@ -1,9 +1,9 @@
-setwd("~/Documents/Learning/Coursera/Exploratory Data Analysis/Week 01/Weekly Project/ExData_Plotting1/mySourceCode")
+setwd("~/Documents/Learning/Coursera/Exploratory Data Analysis/Week 01/Weekly Project/ExData_Plotting1")
 # To set the locale to English in Ubuntu
 Sys.setlocale("LC_TIME", "C")
 
 # Reading the raw data from a local file in my Working Directory
-powerConsumptionData <- read.csv2("../../household_power_consumption.txt",sep = ";", header = TRUE, stringsAsFactors = FALSE, na.strings = "?")
+powerConsumptionData <- read.csv2("../household_power_consumption.txt",sep = ";", header = TRUE, stringsAsFactors = FALSE, na.strings = "?")
 
 # Converting the first column to Date
 powerConsumptionData$Date <- as.Date(powerConsumptionData$Date,"%d/%m/%Y")
